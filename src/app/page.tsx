@@ -39,6 +39,7 @@ export default function Home() {
     if (activeTask.trim() !== '') {
       setTasks([...tasks, { task: activeTask, time }]);
       setActiveTask('');
+      setTime(0);
     }
     setIsRunning(false);
   };
